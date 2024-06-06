@@ -1,0 +1,5 @@
+.navbar {
+    margin: 0;  /* ยกเลิก margin ที่อาจถูกตั้งค่า */
+    padding: 0;  /* ยกเลิก padding ที่อาจถูกตั้งค่า */
+    box-sizing: border-box;  /* ใช้ box-sizing เพื่อให้ padding และ border ไม่เพิ่มขนาดองค์ประกอบ */
+  }

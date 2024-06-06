@@ -1,0 +1,15 @@
+.logo-card {
+    width: 355px;
+    height: 125px;
+    background-color: rgb(18, 116, 15);
+}
+.text-green {
+    color: rgb(52, 211, 65);
+}
+
+.logo-icon img {
+    max-width: 100px; /* ปรับตามขนาดที่ต้องการ */
+    max-height: 100px; /* ปรับตามขนาดที่ต้องการ */
+    width: auto;
+    height: auto;
+}

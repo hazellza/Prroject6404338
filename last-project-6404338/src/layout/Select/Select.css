@@ -1,0 +1,19 @@
+#select-page {
+    background-image: linear-gradient(135deg, rgba(67, 188, 52, 1) 0%, rgba(18, 89, 71, 1) 100%);
+}
+
+.container-pot {
+    height: 700px;
+    width: 550px;
+}
+.list-pot {
+    overflow-y: auto; 
+}
+
+.translucents-bg {
+    background-color: rgba(255, 255, 255, 0.5); /* สีขาวพร้อมความโปร่งใส 80% */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+
+
