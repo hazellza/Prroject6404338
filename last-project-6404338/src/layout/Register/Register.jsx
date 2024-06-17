@@ -30,7 +30,7 @@ function register() {
           <div className="form-flname flex items-center justify-center gap-2">
             <label
               htmlFor="firstname"
-              className="input input-bordered   flex items-center gap-2 w-40"
+              className="input input-bordered  flex items-center gap-2 w-40"
             >
               <input
                 type="text"
@@ -43,7 +43,7 @@ function register() {
             </label>
             <label
               htmlFor="lastname"
-              className="input input-bordered   flex items-center gap-2 w-40 font"
+              className="input input-bordered  flex items-center gap-2 w-40 font"
             >
               <input
                 type="text"
@@ -124,27 +124,13 @@ function register() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="btn btn-neutral w-64 text-white -mt-4"
+              className="btn btn-neutral w-64 text-white -mt-4 register"
             >
               Register
             </button>
           </div>
         </form>
-        <div className="text-center -mt-2">
-          <label>Or Register With</label>
-          <div className="icon-register flex items-center justify-center mt-4">
-            <div
-              className="h-12 w-12 rounded-full bg-slate-50 flex items-center justify-center cursor-pointer "
-              onClick={handleGoogleLogin}
-            >
-              <FontAwesomeIcon
-                icon={faGoogle}
-                size="2x"
-                className="icon-google"
-              />
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

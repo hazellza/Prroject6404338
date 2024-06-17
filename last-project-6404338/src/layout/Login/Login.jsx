@@ -1,33 +1,25 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../../components/Logo/Logo";
 
 function Login() {
   const [username, setUsername] = useState("");
-  const [password, setPassword] = useState(""); 
+  const [password, setPassword] = useState("");
 
   const showError = () => {
-    document.querySelector('.error-message').classList.remove('hidden');
-  }
+    document.querySelector(".error-message").classList.remove("hidden");
+  };
   const delError = () => {
-    document.querySelector('.error-message').classList.add('hidden');
-  }
-  
+    document.querySelector(".error-message").classList.add("hidden");
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!username || !password) {
       showError();
-    } else if(username || password) {
+    } else if (username || password) {
       delError();
     }
-  };
-
-  const handleGoogleLogin = () => {
-    // Logic สำหรับการล็อกอินผ่าน Google
-    console.log("Login with Google");
   };
 
   return (
@@ -36,7 +28,7 @@ function Login() {
       className="min-h-screen flex flex-col items-center justify-center "
     >
       <div>
-      <Logo></Logo>
+        <Logo></Logo>
       </div>
       <div className="translucent-bg">
         <div className="text-center mb-14 font-bold text-4xl">
@@ -159,23 +151,6 @@ function Login() {
             </button>
           </div>
         </form>
-        <div className="social-login">
-          <div className="text-center mb-8">
-            <label className="text-sm">Or Sign Up Using</label>
-          </div>
-          <div className="icon-login flex items-center justify-center gap-3">
-            <div
-              className="h-12 w-12 rounded-full bg-slate-50 flex items-center justify-center cursor-pointer "
-              onClick={handleGoogleLogin}
-            >
-              <FontAwesomeIcon
-                icon={faGoogle}
-                size="2x"
-                className="icon-google"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

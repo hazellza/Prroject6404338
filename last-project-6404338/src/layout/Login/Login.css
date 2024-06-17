@@ -16,9 +16,6 @@
 #login-page .icon-login .bg-slate-50:hover {
   background-color: #e2e8f0;
 }
-#login-page .icon-login .icon-google {
-  color: #db4437;
-}
 
 #login-page .icon-login .icon:hover {
   opacity: 0.8;
@@ -29,8 +26,8 @@
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 24rem;
+  width: 350px;
+  margin-bottom: 150px;
 }
 
 #login-page a {
